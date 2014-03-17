@@ -8,7 +8,7 @@ use Behat\Gherkin\Node\FeatureNode as FeatureNode,
     Hal\BehatWizard\Domain\Entity\ReportInterface\Dumper;
 
 /*
- * This file is part of the Behat Tools
+ * This file is part of the BehatWizard
  * (c) 2012 Jean-François Lépine <jeanfrancois@lepine.pro>
  *
  * For the full copyright and license information, please view the LICENSE

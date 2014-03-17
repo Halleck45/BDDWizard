@@ -6,7 +6,7 @@ use Hal\BehatWizard\Domain\Model\Feature\Writer\WritteableInterface,
     Hal\BehatWizard\Domain\Entity\FeatureInterface as EntityFeatureInterface;
 
 /*
- * This file is part of the Behat Tools
+ * This file is part of the BehatWizard
  * (c) 2012 Jean-François Lépine <jeanfrancois@lepine.pro>
  *
  * For the full copyright and license information, please view the LICENSE

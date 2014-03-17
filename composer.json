@@ -13,7 +13,8 @@
     ],
     "autoload": {
         "psr-0": {
-            "": "./src/"
+            "": "./src/",
+            "Behat\\WizardExtension": "./src/"
         }
     },
     "require": {

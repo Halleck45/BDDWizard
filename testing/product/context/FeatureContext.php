@@ -28,9 +28,9 @@ class FeatureContext extends BehatContext
      * @param array $parameters context parameters (set them up through behat.yml)
      */
     public function __construct(array $parameters) {
-        $this->useContext(
-                'hal', new HalContext($parameters)
-        );
+//        $this->useContext(
+//                'hal', new HalContext($parameters)
+//        );
     }
 
 }

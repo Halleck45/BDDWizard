@@ -1,0 +1,13 @@
+default:
+  paths:
+      features: testing/product/features # features should be localized in each bundle
+      bootstrap: testing/product/context
+#  context:
+#      class: Rf\FeatureContext
+  extensions:
+    Behat\WizardExtension\Extension: ~
+
+  formatter:
+      name: pretty,junit,html
+      parameters:
+        output_path: null,build/behat-junit,build/behat_report.html

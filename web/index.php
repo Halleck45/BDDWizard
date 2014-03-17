@@ -7,8 +7,8 @@ $app['debug'] = true;
 
 //
 // configuration
-$app['behat.paths.features'] = __DIR__.'/../testing/unit/resources/fixtures/features';
-$app['behat.paths.reports'] = __DIR__.'/../testing/unit/resources/fixtures/reports';
+$app['behat.paths.features'] = getenv('GHERKIN_FEATURES');
+$app['behat.paths.reports'] = getenv('GHERKIN_REPORTS');
 
 //
 // Factory of features

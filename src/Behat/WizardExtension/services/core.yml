@@ -1,0 +1,9 @@
+parameters:
+
+services:
+  behat.wizardextension.console.processor.locator:
+    class: Behat\WizardExtension\Console\Processor\LocatorProcessor
+    arguments:
+      - @service_container
+    tags:
+      - { name: behat.console.processor }

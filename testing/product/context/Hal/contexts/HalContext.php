@@ -23,7 +23,7 @@ class HalContext extends BehatContext
      */
     public function __construct(array $parameters)
     {
-        $this->useContext('mink', new \Behat\MinkExtension\Context\MinkContext($parameters));
+//        $this->useContext('mink', new \Behat\MinkExtension\Context\MinkContext($parameters));
         $this->useContext('hbw-sys-auth', new System\AuthContext($parameters));
         $this->useContext('hbw-feature-feature', new Domain\FeatureContext($parameters));
         $this->useContext('hbw-feature-feature', new Domain\ScenarioContext($parameters));

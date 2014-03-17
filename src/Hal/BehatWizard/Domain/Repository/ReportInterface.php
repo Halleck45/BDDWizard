@@ -5,7 +5,7 @@ namespace Hal\BehatWizard\Domain\Repository;
 use Hal\BehatWizard\Domain\Entity\GherkinInterface;
 
 /*
- * This file is part of the Behat Tools
+ * This file is part of the BehatWizard
  * (c) 2012 Jean-François Lépine <jeanfrancois@lepine.pro>
  *
  * For the full copyright and license information, please view the LICENSE
