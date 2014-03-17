@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ "hbw.edit.title"|trans }}{% endblock %}
+
+{% block body %}
+
+
+<!-- models -->
+{% include "feature/edit/models.html.twig" %}
+<form id="form-save" method="post">
+    <textarea id="feature_content" name="content">{{ feature.content }}</textarea>
+</form>
+<div class="row">
+
+    <!-- Side panel -->
+    {% include "feature/edit/side.panel.html.twig" %}
+
+    <!--  Modified content  -->
+    <div id="page-editing" class="span8">
+        <div class="well">
+
+            <!-- Box Scenario -->
+            {% include "feature/edit/edit.scenario.html.twig" %}
+            <!-- Box Background -->
+            {% include "feature/edit/edit.background.html.twig" %}
+            <!-- Box Feature -->
+            {% include "feature/edit/edit.main.html.twig" %}
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
+
+
+{% block javascript %}
+<script type="text/javascript">
+    $(function() {
+
+        var feature = new hbw.domain.feature( {{ dumper.dump() | raw }});
+        hbw.ui.editing.init(feature);
+    });
+</script>
+{% endblock %}

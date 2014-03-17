@@ -1,0 +1,34 @@
+{
+    "name": "halleck45/behat-wizard",
+    "description": "GUI for Behat",
+    "minimum-stability": "dev",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Jean-François Lépine",
+            "email": "lepinejeanfrancois@yahoo.fr",
+            "homepage": "https://www.twitter.com/Halleck45",
+            "role": "Copyright Holder"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "": "./src/"
+        }
+    },
+    "require": {
+        "silex/silex": "v1.1.2",
+        "behat/gherkin": "v2.3",
+        "symfony/finder": "v2.4.2",
+        "symfony/dependency-injection": "v2.4.2",
+        "twig/twig": "*",
+        "symfony/twig-bridge":  "v2.4.2",
+        "behat/behat": "*",
+        "twig/extensions": "v1.0.1",
+        "symfony/icu": "v1.2.0",
+        "symfony/serializer": "v2.4.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.32"
+    }
+}

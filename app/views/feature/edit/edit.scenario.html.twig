@@ -1,0 +1,126 @@
+<!-- Box Scenario -->
+<div id="box-edit-scenario" class="box-editing" style="display:none">
+    <div class="box-act">
+        <button class="btn btn-primary btn-feature-edit " type="submit" data-callback-out="editMain">{{ "hbw.edit.scenario.btn.end"|trans }}</button></div>
+
+    <div class="">
+        <h1>{{ "hbw.edit.scenario.title"|trans }}</h1>
+        <p>{{ "hbw.edit.scenario.help"|trans }}</p>
+
+        <div class=" box-scenario box-scenario-opened">
+
+
+            <div class="form-horizontal">
+                <fieldset>
+                    <legend>{{ "hbw.edit.scenario.field.title.resume"|trans }}</legend>
+                    <div class="control-group">
+                        <label class="control-label" for="scenario-title">{{ "hbw.edit.scenario.field.title.title"|trans }}</label>
+                        <div class="controls">
+                            <input type="text" id="scenario-title" name="scenario-title" class="input-xlarge input-step input-scenario-title"  placeholder="{{ "hbw.edit.scenario.field.title.placeholder"|trans }}" />
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+
+            <div class="scenario-content">
+                <div class="form-horizontal">
+                    <fieldset>
+                        <legend>{{ "hbw.edit.steps.given.title"|trans }}</legend>
+
+                        <div id="box-steps-given" class="box-step box-given">
+                            <!-- Content will be placed here -->
+                        </div>
+
+                        <div class="control-group">
+                            <div class="controls">
+                                <div class="btn-group">
+                                    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="icon icon-plus-sign"></i> {{ "hbw.edit.steps.given.add.text"|trans }}
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a alt="add-step-simple-given" class="btn-step-add" data-type="given"  data-isoutline="0" href="#">{{ "hbw.edit.steps.given.add.simple"|trans }}</a></li>
+                                        <li><a alt="add-step-outline-given" class="btn-step-add btn-step-outline-add" data-type="given"  data-isoutline="1" href="#">{{ "hbw.edit.steps.given.add.outline"|trans }}</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                    <fieldset>
+                        <legend>{{ "hbw.edit.steps.when.title"|trans }}</legend>
+
+                        <div id="box-steps-when" class="box-step box-when">
+                            <!-- Content will be placed hre -->
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                                <div class="btn-group">
+                                    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="icon icon-plus-sign"></i> {{ "hbw.edit.steps.when.add.text"|trans }}
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a alt="add-step-simple-when" class="btn-step-add" data-type="when"  data-isoutline="0" href="#">{{ "hbw.edit.steps.when.add.simple"|trans }}</a></li>
+                                        <li><a alt="add-step-outline-when" class="btn-step-add btn-step-outline-add" data-type="when"  data-isoutline="1" href="#">{{ "hbw.edit.steps.when.add.outline"|trans }}</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>{{ "hbw.edit.steps.then.title"|trans }}</legend>
+
+                        <div id="box-steps-then" class="box-step box-then">
+                            <!-- Content will be placed hre -->
+                        </div>
+                        <div class="control-group" >
+                            <div class="controls">
+                                <div class="btn-group">
+                                    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="icon icon-plus-sign"></i> {{ "hbw.edit.steps.then.add.text"|trans }}
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a alt="add-step-simple-then" class="btn-step-add" data-type="then"  data-isoutline="0" href="#">{{ "hbw.edit.steps.then.add.simple"|trans }}</a></li>
+                                        <li><a alt="add-step-outline-then" class="btn-step-add btn-step-outline-add" data-type="then"  data-isoutline="1" href="#">{{ "hbw.edit.steps.then.add.outline"|trans }}</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+
+                    <fieldset>
+                        <legend>{{ "hbw.edit.scenario.example.title"|trans }}</legend>
+
+                        {{ "hbw.edit.scenario.example.short"|trans|raw }}
+                        
+
+                        <div class="outline-node outline-examples">
+                            <table  id="examples" class="outline-node examples table">
+                                <thead>
+                                    <tr class="outline-row">
+                                        <!-- Content will be placed hre -->
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Content will be placed hre -->
+                                </tbody>
+                            </table>
+                            <div class="table-condensed controls">
+                                <button class="btn btn-small  btn-outline-add-row">{{ "hbw.edit.steps.outline.btn.addRow"|trans }}</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class=" box-act form-actions">
+                    <button class="btn btn-primary btn-feature-edit " type="submit" data-callback-out="editMain">{{ "hbw.edit.scenario.btn.end"|trans }}</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

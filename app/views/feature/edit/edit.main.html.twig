@@ -1,0 +1,67 @@
+                <!-- Box Feature -->
+                <div id="box-edit-title" class="current box-editing" data-callback-out="editMain">
+                    
+                    <div class="box-act">
+                        <a class="btn btn-scenario-add btn-scenario-edit" data-callback-out="addScenario" data-callback-enter="addScenario">{{ "hbw.edit.main.btn.addScenario"|trans }}</a>
+                    </div>
+                    
+                    <div class="hero-unit">
+                        <h1>{{ "hbw.edit.main.title"|trans }}</h1>
+                        <p>{{ "hbw.edit.main.short"|trans }}</p>
+                        <div class="form-horizontal">
+
+                            <fieldset>
+                                <legend>{{ "hbw.edit.main.subtitle"|trans }}</legend>
+                                <div class="control-group">
+                                    <label for="title" class="control-label">{{ "hbw.edit.main.field.title.title"|trans }}</label>
+                                    <div class="controls">
+                                        <input name="title" id="title" placeholder="{{ "hbw.edit.main.field.title.placeholder"|trans }}" class="input-xlarg" />
+                                        <p class="help-block">{{ "hbw.edit.main.field.title.help"|trans }}</p>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label for="inorder" class="control-label">{{ "hbw.edit.main.field.inorder.title"|trans }}</label>
+                                    <div class="controls">
+                                        <input name="inorder" id="inorder" placeholder="{{ "hbw.edit.main.field.inorder.placeholder"|trans }}" class="input-xlarg" />
+                                        <p class="help-block">{{ "hbw.edit.main.field.inorder.help"|trans }}</p>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label for="as" class="control-label">{{ "hbw.edit.main.field.as.title"|trans }}</label>
+                                    <div class="controls">
+                                        <input name="as" id="as" placeholder="{{ "hbw.edit.main.field.as.placeholder"|trans }}" class="input-xlarg" />
+                                        <p class="help-block">{{ "hbw.edit.main.field.as.help"|trans }}</p>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label for="should" class="control-label">{{ "hbw.edit.main.field.should.title"|trans }}</label>
+                                    <div class="controls">
+                                        <input name="should" id="should" placeholder=" {{ "hbw.edit.main.field.should.placeholder"|trans }}" class="input-xlarg" />
+                                        <p class="help-block">{{ "hbw.edit.main.field.should.help"|trans }}</p>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset id="box-notes">
+                                <legend>{{ "hbw.edit.main.field.notes.title"|trans }}</legend>
+                                <div class="control-group">
+                                    <textarea name="notes" id="notes" placeholder="{{ "hbw.edit.main.field.notes.placeholder"|trans }}" class="field  span6" rows="6"></textarea>
+                                    <p class="help-block">{{ "hbw.edit.main.field.notes.help"|trans }}</p>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                        
+                        
+                        <div>
+                            <p>
+                                {{ "hbw.edit.main.whattodo.help"|trans }}
+                            </p>
+                            
+                            <div class="box-act">
+                                <a class="btn btn-scenario-add btn-scenario-edit" data-callback-out="addScenario" data-callback-enter="addScenario">{{ "hbw.edit.main.btn.addScenario"|trans }}</a>
+                                <a class="btn btn-primary btn-save">{{ "hbw.edit.main.btn.save"|trans }}</a>
+                            </div>
+                        </div>
+                        
+                </div>

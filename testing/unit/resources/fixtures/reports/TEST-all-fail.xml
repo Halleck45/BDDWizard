@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="4" name="All fails" file="/home/data/www/jeff/github/BehatWizard/testing/unit/resources/fixtures/features/all-fail.feature" tests="15" time="0.013164">
+    <testcase classname="All fails" name="never-ok - invalid scenario 1" time="0.008139">
+        <failure message="Eh ! Anuthing was wrong
+Failed asserting that false matches expected true." type="failed"><![CDATA[
+exception 'PHPUnit_Framework_ExpectationFailedException' with message 'Eh ! Anuthing was wrong
+Failed asserting that false matches expected true.' in /usr/local/lib/php/PHPUnit/Framework/Constraint/IsEqual.php:171
+Stack trace:
+#0 /usr/local/lib/php/PHPUnit/Framework/Assert.php(2100): PHPUnit_Framework_Constraint_IsEqual->evaluate(false, 'Eh ! Anuthing w...')
+#1 /usr/local/lib/php/PHPUnit/Framework/Assert.php(441): PHPUnit_Framework_Assert::assertThat(false, Object(PHPUnit_Framework_Constraint_IsEqual), 'Eh ! Anuthing w...')
+#2 /usr/local/lib/php/PHPUnit/Framework/Assert/Functions.php(539): PHPUnit_Framework_Assert::assertEquals(true, false, 'Eh ! Anuthing w...', 0, 10, false, false)
+#3 /home/data/www/jeff/github/BehatWizard/testing/unit/resources/fixtures/features/bootstrap/FeatureContext.php(45): assertEquals(true, false, 'Eh ! Anuthing w...')
+#4 [internal function]: FeatureContext->anythingFalse()
+#5 /usr/local/lib/php/behat/src/Behat/Behat/Definition/Annotation/Definition.php(162): call_user_func_array(Array, Array)
+#6 /usr/local/lib/php/behat/src/Behat/Behat/Tester/StepTester.php(178): Behat\Behat\Definition\Annotation\Definition->run(Object(FeatureContext), Array)
+#7 /usr/local/lib/php/behat/src/Behat/Behat/Tester/StepTester.php(148): Behat\Behat\Tester\StepTester->executeStepDefinition(Object(Behat\Gherkin\Node\StepNode), Object(Behat\Behat\Definition\Annotation\Given))
+#8 /usr/local/lib/php/behat/src/Behat/Behat/Tester/StepTester.php(119): Behat\Behat\Tester\StepTester->executeStep(Object(Behat\Gherkin\Node\StepNode))
+#9 /usr/local/lib/php/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\StepTester->visit(Object(Behat\Gherkin\Node\StepNode))
+#10 /usr/local/lib/php/behat/src/Behat/Behat/Tester/ScenarioTester.php(159): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\StepTester))
+#11 /usr/local/lib/php/behat/src/Behat/Behat/Tester/ScenarioTester.php(103): Behat\Behat\Tester\ScenarioTester->visitStep(Object(Behat\Gherkin\Node\StepNode), Object(FeatureContext), Array, false)
+#12 /usr/local/lib/php/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\ScenarioTester->visit(Object(Behat\Gherkin\Node\ScenarioNode))
+#13 /usr/local/lib/php/behat/src/Behat/Behat/Tester/FeatureTester.php(108): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\ScenarioTester))
+#14 /usr/local/lib/php/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\FeatureTester->visit(Object(Behat\Gherkin\Node\FeatureNode))
+#15 /usr/local/lib/php/behat/src/Behat/Behat/Runner.php(183): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\FeatureTester))
+#16 /usr/local/lib/php/behat/src/Behat/Behat/Runner.php(160): Behat\Behat\Runner->runFeatures(Object(Behat\Gherkin\Gherkin), Array)
+#17 /usr/local/lib/php/behat/src/Behat/Behat/Console/Command/BehatCommand.php(80): Behat\Behat\Runner->runSuite()
+#18 /usr/local/lib/php/Symfony/Component/Console/Command/Command.php(224): Behat\Behat\Console\Command\BehatCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /usr/local/lib/php/Symfony/Component/Console/Application.php(194): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /usr/local/lib/php/Symfony/Component/Console/Application.php(118): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /usr/local/bin/behat(27): Symfony\Component\Console\Application->run()
+#22 {main}
+]]></failure>
+    </testcase>
+    <testcase classname="All fails" name="never-ok - invalid scenario 2" time="0.001350">
+        <failure message="Eh ! Anuthing was wrong
+Failed asserting that false matches expected true." type="failed"><![CDATA[
+exception 'PHPUnit_Framework_ExpectationFailedException' with message 'Eh ! Anuthing was wrong
+Failed asserting that false matches expected true.' in /usr/local/lib/php/PHPUnit/Framework/Constraint/IsEqual.php:171
+Stack trace:
+#0 /usr/local/lib/php/PHPUnit/Framework/Assert.php(2100): PHPUnit_Framework_Constraint_IsEqual->evaluate(false, 'Eh ! Anuthing w...')
+#1 /usr/local/lib/php/PHPUnit/Framework/Assert.php(441): PHPUnit_Framework_Assert::assertThat(false, Object(PHPUnit_Framework_Constraint_IsEqual), 'Eh ! Anuthing w...')
+#2 /usr/local/lib/php/PHPUnit/Framework/Assert/Functions.php(539): PHPUnit_Framework_Assert::assertEquals(true, false, 'Eh ! Anuthing w...', 0, 10, false, false)
+#3 /home/data/www/jeff/github/BehatWizard/testing/unit/resources/fixtures/features/bootstrap/FeatureContext.php(45): assertEquals(true, false, 'Eh ! Anuthing w...')
+#4 [internal function]: FeatureContext->anythingFalse()
+#5 /usr/local/lib/php/behat/src/Behat/Behat/Definition/Annotation/Definition.php(162): call_user_func_array(Array, Array)
+#6 /usr/local/lib/php/behat/src/Behat/Behat/Tester/StepTester.php(178): Behat\Behat\Definition\Annotation\Definition->run(Object(FeatureContext), Array)
+#7 /usr/local/lib/php/behat/src/Behat/Behat/Tester/StepTester.php(148): Behat\Behat\Tester\StepTester->executeStepDefinition(Object(Behat\Gherkin\Node\StepNode), Object(Behat\Behat\Definition\Annotation\Given))
+#8 /usr/local/lib/php/behat/src/Behat/Behat/Tester/StepTester.php(119): Behat\Behat\Tester\StepTester->executeStep(Object(Behat\Gherkin\Node\StepNode))
+#9 /usr/local/lib/php/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\StepTester->visit(Object(Behat\Gherkin\Node\StepNode))
+#10 /usr/local/lib/php/behat/src/Behat/Behat/Tester/ScenarioTester.php(159): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\StepTester))
+#11 /usr/local/lib/php/behat/src/Behat/Behat/Tester/ScenarioTester.php(103): Behat\Behat\Tester\ScenarioTester->visitStep(Object(Behat\Gherkin\Node\StepNode), Object(FeatureContext), Array, false)
+#12 /usr/local/lib/php/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\ScenarioTester->visit(Object(Behat\Gherkin\Node\ScenarioNode))
+#13 /usr/local/lib/php/behat/src/Behat/Behat/Tester/FeatureTester.php(108): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\ScenarioTester))
+#14 /usr/local/lib/php/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\FeatureTester->visit(Object(Behat\Gherkin\Node\FeatureNode))
+#15 /usr/local/lib/php/behat/src/Behat/Behat/Runner.php(183): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\FeatureTester))
+#16 /usr/local/lib/php/behat/src/Behat/Behat/Runner.php(160): Behat\Behat\Runner->runFeatures(Object(Behat\Gherkin\Gherkin), Array)
+#17 /usr/local/lib/php/behat/src/Behat/Behat/Console/Command/BehatCommand.php(80): Behat\Behat\Runner->runSuite()
+#18 /usr/local/lib/php/Symfony/Component/Console/Command/Command.php(224): Behat\Behat\Console\Command\BehatCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /usr/local/lib/php/Symfony/Component/Console/Application.php(194): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /usr/local/lib/php/Symfony/Component/Console/Application.php(118): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /usr/local/bin/behat(27): Symfony\Component\Console\Application->run()
+#22 {main}
+]]></failure>
+    </testcase>
+    <testcase classname="All fails" name="never-ok - invalid scenario 3" time="0.001342">
+        <failure message="Eh ! Anuthing was wrong
+Failed asserting that false matches expected true." type="failed"><![CDATA[
+exception 'PHPUnit_Framework_ExpectationFailedException' with message 'Eh ! Anuthing was wrong
+Failed asserting that false matches expected true.' in /usr/local/lib/php/PHPUnit/Framework/Constraint/IsEqual.php:171
+Stack trace:
+#0 /usr/local/lib/php/PHPUnit/Framework/Assert.php(2100): PHPUnit_Framework_Constraint_IsEqual->evaluate(false, 'Eh ! Anuthing w...')
+#1 /usr/local/lib/php/PHPUnit/Framework/Assert.php(441): PHPUnit_Framework_Assert::assertThat(false, Object(PHPUnit_Framework_Constraint_IsEqual), 'Eh ! Anuthing w...')
+#2 /usr/local/lib/php/PHPUnit/Framework/Assert/Functions.php(539): PHPUnit_Framework_Assert::assertEquals(true, false, 'Eh ! Anuthing w...', 0, 10, false, false)
+#3 /home/data/www/jeff/github/BehatWizard/testing/unit/resources/fixtures/features/bootstrap/FeatureContext.php(45): assertEquals(true, false, 'Eh ! Anuthing w...')
+#4 [internal function]: FeatureContext->anythingFalse()
+#5 /usr/local/lib/php/behat/src/Behat/Behat/Definition/Annotation/Definition.php(162): call_user_func_array(Array, Array)
+#6 /usr/local/lib/php/behat/src/Behat/Behat/Tester/StepTester.php(178): Behat\Behat\Definition\Annotation\Definition->run(Object(FeatureContext), Array)
+#7 /usr/local/lib/php/behat/src/Behat/Behat/Tester/StepTester.php(148): Behat\Behat\Tester\StepTester->executeStepDefinition(Object(Behat\Gherkin\Node\StepNode), Object(Behat\Behat\Definition\Annotation\Given))
+#8 /usr/local/lib/php/behat/src/Behat/Behat/Tester/StepTester.php(119): Behat\Behat\Tester\StepTester->executeStep(Object(Behat\Gherkin\Node\StepNode))
+#9 /usr/local/lib/php/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\StepTester->visit(Object(Behat\Gherkin\Node\StepNode))
+#10 /usr/local/lib/php/behat/src/Behat/Behat/Tester/ScenarioTester.php(159): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\StepTester))
+#11 /usr/local/lib/php/behat/src/Behat/Behat/Tester/ScenarioTester.php(103): Behat\Behat\Tester\ScenarioTester->visitStep(Object(Behat\Gherkin\Node\StepNode), Object(FeatureContext), Array, false)
+#12 /usr/local/lib/php/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\ScenarioTester->visit(Object(Behat\Gherkin\Node\ScenarioNode))
+#13 /usr/local/lib/php/behat/src/Behat/Behat/Tester/FeatureTester.php(108): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\ScenarioTester))
+#14 /usr/local/lib/php/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\FeatureTester->visit(Object(Behat\Gherkin\Node\FeatureNode))
+#15 /usr/local/lib/php/behat/src/Behat/Behat/Runner.php(183): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\FeatureTester))
+#16 /usr/local/lib/php/behat/src/Behat/Behat/Runner.php(160): Behat\Behat\Runner->runFeatures(Object(Behat\Gherkin\Gherkin), Array)
+#17 /usr/local/lib/php/behat/src/Behat/Behat/Console/Command/BehatCommand.php(80): Behat\Behat\Runner->runSuite()
+#18 /usr/local/lib/php/Symfony/Component/Console/Command/Command.php(224): Behat\Behat\Console\Command\BehatCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /usr/local/lib/php/Symfony/Component/Console/Application.php(194): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /usr/local/lib/php/Symfony/Component/Console/Application.php(118): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /usr/local/bin/behat(27): Symfony\Component\Console\Application->run()
+#22 {main}
+]]></failure>
+    </testcase>
+    <testcase classname="All fails" name="never-ok - invalid scenario 4" time="0.001324">
+        <failure message="Eh ! Anuthing was wrong
+Failed asserting that false matches expected true." type="failed"><![CDATA[
+exception 'PHPUnit_Framework_ExpectationFailedException' with message 'Eh ! Anuthing was wrong
+Failed asserting that false matches expected true.' in /usr/local/lib/php/PHPUnit/Framework/Constraint/IsEqual.php:171
+Stack trace:
+#0 /usr/local/lib/php/PHPUnit/Framework/Assert.php(2100): PHPUnit_Framework_Constraint_IsEqual->evaluate(false, 'Eh ! Anuthing w...')
+#1 /usr/local/lib/php/PHPUnit/Framework/Assert.php(441): PHPUnit_Framework_Assert::assertThat(false, Object(PHPUnit_Framework_Constraint_IsEqual), 'Eh ! Anuthing w...')
+#2 /usr/local/lib/php/PHPUnit/Framework/Assert/Functions.php(539): PHPUnit_Framework_Assert::assertEquals(true, false, 'Eh ! Anuthing w...', 0, 10, false, false)
+#3 /home/data/www/jeff/github/BehatWizard/testing/unit/resources/fixtures/features/bootstrap/FeatureContext.php(45): assertEquals(true, false, 'Eh ! Anuthing w...')
+#4 [internal function]: FeatureContext->anythingFalse()
+#5 /usr/local/lib/php/behat/src/Behat/Behat/Definition/Annotation/Definition.php(162): call_user_func_array(Array, Array)
+#6 /usr/local/lib/php/behat/src/Behat/Behat/Tester/StepTester.php(178): Behat\Behat\Definition\Annotation\Definition->run(Object(FeatureContext), Array)
+#7 /usr/local/lib/php/behat/src/Behat/Behat/Tester/StepTester.php(148): Behat\Behat\Tester\StepTester->executeStepDefinition(Object(Behat\Gherkin\Node\StepNode), Object(Behat\Behat\Definition\Annotation\Given))
+#8 /usr/local/lib/php/behat/src/Behat/Behat/Tester/StepTester.php(119): Behat\Behat\Tester\StepTester->executeStep(Object(Behat\Gherkin\Node\StepNode))
+#9 /usr/local/lib/php/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\StepTester->visit(Object(Behat\Gherkin\Node\StepNode))
+#10 /usr/local/lib/php/behat/src/Behat/Behat/Tester/ScenarioTester.php(159): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\StepTester))
+#11 /usr/local/lib/php/behat/src/Behat/Behat/Tester/ScenarioTester.php(103): Behat\Behat\Tester\ScenarioTester->visitStep(Object(Behat\Gherkin\Node\StepNode), Object(FeatureContext), Array, false)
+#12 /usr/local/lib/php/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\ScenarioTester->visit(Object(Behat\Gherkin\Node\ScenarioNode))
+#13 /usr/local/lib/php/behat/src/Behat/Behat/Tester/FeatureTester.php(108): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\ScenarioTester))
+#14 /usr/local/lib/php/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\FeatureTester->visit(Object(Behat\Gherkin\Node\FeatureNode))
+#15 /usr/local/lib/php/behat/src/Behat/Behat/Runner.php(183): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\FeatureTester))
+#16 /usr/local/lib/php/behat/src/Behat/Behat/Runner.php(160): Behat\Behat\Runner->runFeatures(Object(Behat\Gherkin\Gherkin), Array)
+#17 /usr/local/lib/php/behat/src/Behat/Behat/Console/Command/BehatCommand.php(80): Behat\Behat\Runner->runSuite()
+#18 /usr/local/lib/php/Symfony/Component/Console/Command/Command.php(224): Behat\Behat\Console\Command\BehatCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /usr/local/lib/php/Symfony/Component/Console/Application.php(194): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /usr/local/lib/php/Symfony/Component/Console/Application.php(118): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /usr/local/bin/behat(27): Symfony\Component\Console\Application->run()
+#22 {main}
+]]></failure>
+    </testcase>
+</testsuite>

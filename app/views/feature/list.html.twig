@@ -1,0 +1,148 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ "hbw.list.title" | trans }}{% endblock %}
+
+{% block body %}
+
+
+<p class="box-act">
+    <a class="btn btn-info" href="index.php/edit"><i class="icon-white icon-plus-sign"></i> {{ "hbw.list.btn.new" | trans }}</a>
+</p>
+
+<div id="wrapper">
+    <div class="row" id="box-controls">
+        <ul class="splitter "  >
+            <li class="span8">{{ "hbw.list.filter.text" | trans }}
+                <ul class="controls">
+                    <li ><a class="btn filter filter-all" data-type="all" data-value="all" href="#">{{ "hbw.list.filter.state.all" | trans }}</a></li>
+                    <li ><a class="btn filter filter-state" data-type="state" data-value="success" href="#">{{ "hbw.list.filter.state.success" | trans }}</a></li>
+                    <li><a class="btn filter filter-state" data-type="state" data-value="failure" href="#">{{ "hbw.list.filter.state.failure" | trans }}</a></li>
+                    <li><a class="btn filter filter-state" data-type="state" data-value="pending" href="#">{{ "hbw.list.filter.state.pending" | trans }}</a></li>
+                </ul>
+            </li>
+            <li class="span4">{{ "hbw.list.sort.text" | trans }}
+                <ul class="controls">
+                    <li><a class="btn sort sort-name" data-type="name" data-value="name" href="#">{{ "hbw.list.sort.name" | trans }}</a></li>
+                    <li><a class="btn sort sort-state" data-type="state" data-value="failure" href="#">{{ "hbw.list.sort.state.failure" | trans }}</a></li>
+                    <li><a class="btn sort sort-state" data-type="state" data-value="pending" href="#">{{ "hbw.list.sort.state.pending" | trans }}</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="features row" id="list-features">
+        {% for feature in features%}
+        <div data-id="{{ loop.index0 }}" class="feature span4 {% spaceless %}
+             {% if feature.getReport().countSuccess() == feature.getReport().countTests() and feature.getReport().countTests() > 0 %}
+             success
+             {% elseif feature.getReport().countFailures() > 0 and feature.getReport().countTests() > 0 %}
+             failure
+             {% endif %}
+             {% if feature.getReport().countPending() > 0 or feature.getReport().countTests() == 0 %}
+             pending
+             {% endif %}
+             {% for tag in feature.getGherkin().getTags() %}
+             tag-{{tag}}
+             {% endfor %}
+             "
+             data-failure="{{ 1000 - feature.getReport().countFailures() }}"
+             data-pending="{{ 1000 - feature.getReport().countPending() }}"
+             data-id="{{ loop.index0 }}"
+             >
+            {% endspaceless %}
+            <div class="feature-box">
+                <div class="feature-content">
+                    <span class="feature-state">
+                        <i class="icon {% spaceless %}
+                           {% if feature.getReport().countSuccess() == feature.getReport().countTests() and feature.getReport().countTests() > 0 %}
+                           icon-ok
+                           {% else %}
+                           icon-exclamation-sign
+                           {% endif %}
+                           {% if feature.getReport().countPending() > 0 or feature.getReport().countTests() == 0 %}
+                           icon-time
+                           {% endif %}
+                           "
+                           >{% endspaceless %}</i></span>
+
+                    <div class="help-box" id="help-for-feature-{{ loop.index0 }}" style="display:none;">
+                        <div class="box-feature-fails">
+                            <p><strong>{{ feature.getGherkin().getTitle() }}</strong></p>
+                            {% for testcase in feature.getReport().listTestCases() %}
+                            <div class="testcase {{ testcase.type }}">{{ testcase.name }}</div>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                    <span class="feature-title">
+                        <strong><a
+                                class="help feature-show-details"
+                                data-help-selector="#help-for-feature-{{ loop.index0 }}"
+                                href="index.php/edit/{{ feature.getHash() }}">{{ feature.getGherkin().getTitle() }}</a></strong>
+                    </span>
+                    <div class="feature-count">
+                        (
+                        <span class="feature-count-success">{{ feature.getReport().countSuccess() }}</span>
+                        / <span class="feature-count-pending">{{ feature.getReport().countPending() }}</span>
+                        / <span class="feature-count-fails">{{ feature.getReport().countFailures() }}</span>
+                        / <span class="feature-count-tests">{{ feature.getReport().countTests() }}</span>
+                        )
+                    </div>
+
+                    <div class="feature-description">{{ feature.getGherkin().getDescription() | nl2br }}</div>
+                </div>
+                <div class="feature-tags">
+                    <ul>
+                        {% for tag in feature.getGherkin().getTags() %}
+                        <li class=""><a href="#" data-type="tag" class="label label-info filter filter-tag tag btn-tag" data-value="{{ tag }}">{{ tag }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+{% endblock %}
+
+
+{% block javascript %}
+<script type="text/javascript">
+    $(function() {
+
+        $('.filter').click(function(e) {
+            e.preventDefault();
+            var value = $(this).data('value');
+            var type = $(this).data('type');
+            hbw.ui.listing.filter(type, value);
+
+            $('.filter').removeClass('selected').removeClass('btn-primary');
+            $(this).addClass('selected').addClass('btn-primary');
+        });
+        $('.sort').click(function(e) {
+            e.preventDefault();
+            var value = $(this).data('value');
+            var type = $(this).data('type');
+            hbw.ui.listing.sort(type, value);
+
+            $('.sort').removeClass('selected').removeClass('btn-primary');
+            $(this).addClass('selected').addClass('btn-primary');
+        });
+
+
+        $('.sort-name').click();
+        $('.filter-all').click();
+
+        $('.feature-show-details').each(function() {
+            var $e = $(this);
+            var $box = $($e.data('help-selector'));
+            $e.data('content', $box.html());
+        });
+        $('.feature-show-details').popover();
+
+    });
+</script>
+{% endblock %}
+
