@@ -1,13 +1,14 @@
-# BehatWizard
+# BDDWizard
 
 GUI Tool for Behavior Driven Development fans.
-
 
 ![Listing](docs/screen-home-small.jpg)
 
 ![Edit feature](docs/screen-edit-small.jpg)
 
+# Installation
 
+    php composer.phar require halleck45/behat-wizard master
 
 # Standalone usage
 
@@ -41,6 +42,8 @@ You should also active junit report for your test suite:
             output_path: null,build/behat-junit
 
 Then run `./vendor/bin/behat --wizard`
+
+Note that this extension is **NOT compatible with Behat 3**, due to incompatibility break.
 
 
 # Author

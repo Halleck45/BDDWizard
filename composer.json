@@ -1,6 +1,6 @@
 {
-    "name": "halleck45/behat-wizard",
-    "description": "GUI for Behat",
+    "name": "halleck45/bdd-wizard",
+    "description": "GUI for Behavior Driven Development",
     "minimum-stability": "dev",
     "license": "mit",
     "authors": [
