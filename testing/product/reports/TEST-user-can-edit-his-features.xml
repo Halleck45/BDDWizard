@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" skipped="21" name="User can change an existent feature" tests="9" time="0.102789">
+    <testcase classname="User can change an existent feature" name="edit new feature" time="0.024385" assertions="6">
+    </testcase>
+    <testcase classname="User can change an existent feature" name="edit feature with scenarios" time="0.023724" assertions="6">
+    </testcase>
+    <testcase classname="User can change an existent feature" name="edit feature scenarios with steps" time="0.027497" assertions="7">
+    </testcase>
+    <testcase classname="User can change an existent feature" name="edit steps with multi-lined arguments in my scenarios" time="0.005684" assertions="1">
+    </testcase>
+    <testcase classname="User can change an existent feature" name="edit examples in my scenarios" time="0.005092" assertions="1">
+    </testcase>
+</testsuite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" skipped="48" name="User can add a new feature that he wishes to be present in its application" tests="4" time="0.206313">
+    <testcase classname="User can add a new feature that he wishes to be present in its application" name="add new feature" time="0.022004" assertions="4">
+    </testcase>
+    <testcase classname="User can add a new feature that he wishes to be present in its application" name="add new feature with scenarios" time="0.021760" assertions="6">
+    </testcase>
+    <testcase classname="User can add a new feature that he wishes to be present in its application" name="add steps in my scenarios" time="0.024207" assertions="6">
+    </testcase>
+    <testcase classname="User can add a new feature that he wishes to be present in its application" name="add steps with multi-lined arguments in my scenarios, Ex #1" time="0.045727" assertions="17">
+    </testcase>
+    <testcase classname="User can add a new feature that he wishes to be present in its application" name="add steps with multi-lined arguments in my scenarios, Ex #2" time="0.035717" assertions="28">
+    </testcase>
+    <testcase classname="User can add a new feature that he wishes to be present in its application" name="add examples in my scenarios" time="0.038251" assertions="10">
+    </testcase>
+</testsuite>

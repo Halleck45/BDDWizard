@@ -6,7 +6,7 @@
 
 
 <p class="box-act">
-    <a class="btn btn-info" href="index.php/edit"><i class="icon-white icon-plus-sign"></i> {{ "hbw.list.btn.new" | trans }}</a>
+    <a class="btn btn-info" href="/edit"><i class="icon-white icon-plus-sign"></i> {{ "hbw.list.btn.new" | trans }}</a>
 </p>
 
 <div id="wrapper">
@@ -77,7 +77,7 @@
                         <strong><a
                                 class="help feature-show-details"
                                 data-help-selector="#help-for-feature-{{ loop.index0 }}"
-                                href="index.php/edit/{{ feature.getHash() }}">{{ feature.getGherkin().getTitle() }}</a></strong>
+                                href="/edit/{{ feature.getHash() }}">{{ feature.getGherkin().getTitle() }}</a></strong>
                     </span>
                     <div class="feature-count">
                         (

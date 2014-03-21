@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" skipped="29" name="User can know the list of features of his project" tests="10" time="0.135947">
+    <testcase classname="User can know the list of features of his project" name="list all features of my project" time="0.019682" assertions="4">
+    </testcase>
+    <testcase classname="User can know the list of features of his project" name="list features by state, Ex #1" time="0.024915" assertions="9">
+    </testcase>
+    <testcase classname="User can know the list of features of his project" name="list features by state, Ex #2" time="0.017963" assertions="14">
+    </testcase>
+    <testcase classname="User can know the list of features of his project" name="list features by state, Ex #3" time="0.020060" assertions="19">
+    </testcase>
+    <testcase classname="User can know the list of features of his project" name="list features by its tag, Ex #1" time="0.024919" assertions="24">
+    </testcase>
+    <testcase classname="User can know the list of features of his project" name="list features by its tag, Ex #2" time="0.017483" assertions="29">
+    </testcase>
+</testsuite>

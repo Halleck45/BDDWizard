@@ -1,6 +1,0 @@
-default:
-  paths:
-      features: testing/product/features
-      bootstrap: testing/product/context
-  extensions:
-    Behat\WizardExtension\Extension: ~
