@@ -16,7 +16,7 @@ $input = new ArgvInput(null, $definition);
 
 
 $output = new ConsoleOutput();
-
+$output->writeln('Bevahior Driven Development Wizard, by Jean-François Lépine <https://twitter.com/Halleck45>');
 
 $features = $input->getOption('features');
 $reports = $input->getOption('reports');

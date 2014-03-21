@@ -1,6 +1,6 @@
 hbw:
   app:
-    title: Behat Wizard
+    title: Behavior Driven Development Wizard
   menu:
     new: New feature
     home: My features
