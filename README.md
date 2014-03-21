@@ -2,6 +2,13 @@
 
 GUI Tool for Behavior Driven Development fans.
 
+This tool helps Product Owners to manage their features. They can:
+
++ list their features and know the state of each feature
++ filter features by state, tag, etc...
++ edit features
++ add new features
+
 ![Listing](docs/screen-home-small.jpg)
 
 ![Edit feature](docs/screen-edit-small.jpg)
