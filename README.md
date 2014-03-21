@@ -12,6 +12,10 @@ GUI Tool for Behavior Driven Development fans.
 
 PHP BuiltIn server will listen on http://localhost:8001 (change it with the `--server` option).
 
+# Requirements
+
++ PHP 5.4
+
 # Author
 
 + Jean-François Lépine <blog.lepine.pro>
