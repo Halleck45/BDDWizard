@@ -24,7 +24,7 @@ $files = array_merge(
     , rglob('*.php', 0, 'web')
     , rglob('*.js', 0, 'web')
     , rglob('*.css', 0, 'web')
-    , rglob('*.png', 0, 'img')
+    , rglob('*.png', 0, 'web')
     , rglob('*.php', 0, 'vendor/composer')
     , require 'vendor/composer/autoload_classmap.php'
     , require 'vendor/composer/autoload_files.php'
@@ -77,11 +77,15 @@ if('cli' === php_sapi_name()) {
 switch(\$extension) {
     case 'css':
         header("Content-type: text/css");
-        include 'phar://bdd-wizard.phar/web'.\$filename;
+        echo file_get_contents('phar://bdd-wizard.phar/web'.\$filename);
         break;
     case 'js':
         header("Content-type: application/javascript");
-        include 'phar://bdd-wizard.phar/web'.\$filename;
+        echo file_get_contents('phar://bdd-wizard.phar/web'.\$filename);
+        break;
+    case 'png':
+        header('Content-Type: image/png');
+        echo file_get_contents('phar://bdd-wizard.phar/web'.\$filename);
         break;
     default:
         require_once 'phar://bdd-wizard.phar/web/index.php';
