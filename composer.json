@@ -2,7 +2,7 @@
     "name": "halleck45/bdd-wizard",
     "description": "GUI for Behavior Driven Development",
     "minimum-stability": "dev",
-    "license": "mit",
+    "license": "MIT",
     "authors": [
         {
             "name": "Jean-François Lépine",
