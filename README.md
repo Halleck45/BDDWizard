@@ -18,6 +18,9 @@ This tool helps Product Owners to manage their features. They can:
     wget https://github.com/Halleck45/BDDWizard/raw/master/build/bdd-wizard.phar
     php bdd-wizard.phar --features=/path/of/features --reports=/path/of/junit-format/results
 
+Options :
+--features : the path to your *.feature files, required name for the parent folder is "features"
+--results : the path to the junit format results, required name for the destination folder is "results"
 PHP BuiltIn server will listen on http://localhost:8001 (change it with the `--server` option).
 
 # Requirements
